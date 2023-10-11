@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table Sorting</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Form</h1>
+    <form id="userForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+        <br>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>Table</h1>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th id="firstNameHeader">First Name</th>
+                <th id="lastNameHeader">Last Name</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added dynamically using JavaScript -->
+        </tbody>
+    </table>
+    
+    <div>
+        <button id="sortByName">Sort by Name</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
